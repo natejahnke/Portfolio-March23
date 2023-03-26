@@ -116,7 +116,7 @@ export default function Home(props) {
           <div className="flex flex-col gap-6">
             <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
               <div className="shrink-0">
-                <a href="/demo/astro-boilerplate">
+                <a href="https://nates-animal-scanner.netlify.app/">
                   <img
                     className="h-36 w-36 hover:translate-y-1"
                     src="wildlifeexplorer.png"
@@ -130,7 +130,7 @@ export default function Home(props) {
                 <div className="flex flex-col items-center gap-y-2 md:flex-row">
                   <a
                     className="hover:text-cyan-400"
-                    href="/demo/astro-boilerplate"
+                    href="https://nates-animal-scanner.netlify.app/"
                   >
                     <div className="text-xl font-semibold">
                       AI Wildlife Explorer
@@ -169,7 +169,7 @@ export default function Home(props) {
             </div>
             <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
               <div className="shrink-0">
-                <a href="/demo/astro-boilerplate">
+                <a href="https://next-mn-fish.vercel.app/">
                   <img
                     className="h-36 w-36 hover:translate-y-1"
                     src="fish.png"
@@ -183,7 +183,7 @@ export default function Home(props) {
                 <div className="flex flex-col items-center gap-y-2 md:flex-row">
                   <a
                     className="hover:text-cyan-400"
-                    href="/demo/astro-boilerplate"
+                    href="https://next-mn-fish.vercel.app/"
                   >
                     <div className="text-xl font-semibold">
                       Fish of Minnesota
@@ -218,7 +218,7 @@ export default function Home(props) {
             </div>
             <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
               <div className="shrink-0">
-                <a href="/demo/astro-boilerplate">
+                <a href="https://nates-fight-viewer.netlify.app/">
                   <img
                     className="rounded-full h-36 w-36 hover:translate-y-1"
                     src="fight.png"
@@ -232,7 +232,7 @@ export default function Home(props) {
                 <div className="flex flex-col items-center gap-y-2 md:flex-row">
                   <a
                     className="hover:text-cyan-400"
-                    href="/demo/astro-boilerplate"
+                    href="https://nates-fight-viewer.netlify.app/"
                   >
                     <div className="text-xl font-semibold">UFC Event React</div>
                   </a>
