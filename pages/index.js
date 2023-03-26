@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-// import styles from '@/styles/Home.module.css';
-import { LogoGithub, LogoLinkedin, LogoNodejs } from "react-ionicons";
+import { LogoGithub, LogoLinkedin } from "react-ionicons";
 
 export default function Home(props) {
   return (
@@ -57,7 +56,7 @@ export default function Home(props) {
             <div>
               <h1 className="text-3xl font-bold">Hello, I'm Nate Jahnke</h1>
 
-              <p className="mt-6 text-xl leading-9">
+              <p className="mt-6 sm:text-lg leading-9">
                 As an experienced IT Support professional, I have developed
                 transferable skills that are valuable in software engineering
                 and web development. My attention to detail, problem-solving
@@ -67,7 +66,7 @@ export default function Home(props) {
                 IT Support, coupled with my passion for coding, will enable me
                 to excel in software engineering and web development roles.
               </p>
-              <div className="mt-3 flex gap-1">
+              <div className="mt-3 flex gap-1 mb-8">
                 <a href="https://www.linkedin.com/in/nathanjahnke/">
                   <LogoLinkedin
                     height="48px"
@@ -136,7 +135,7 @@ export default function Home(props) {
                       AI Wildlife Explorer
                     </div>
                   </a>
-                  <div class="ml-3 flex gap-2">
+                  <div class="ml-3 flex flex-wrap gap-2">
                     <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">
                       Next.js
                     </div>
