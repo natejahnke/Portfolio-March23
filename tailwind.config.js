@@ -9,6 +9,25 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      scale: {
+        105: "1.05",
+      },
+      backgroundColor: {
+        "hover-blue": "#1e3a8a",
+      },
+      transitionProperty: {
+        "width-height": "width, height",
+      },
+      transitionDuration: {
+        300: "300ms",
+      },
+      transitionTimingFunction: {
+        "in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+      },
+    },
+  },
+  variants: {
     extend: {},
   },
   plugins: [],

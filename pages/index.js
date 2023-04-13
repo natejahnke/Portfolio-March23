@@ -71,7 +71,7 @@ export default function Home(props) {
                   <LogoLinkedin
                     height="48px"
                     width="48px"
-                    cssClasses="h-12 w-12 hover:translate-y-1"
+                    cssClasses="h-12 w-12 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-hover-blue rounded-full p-1"
                     color="#FFFFFF"
                   />
                 </a>
@@ -79,17 +79,14 @@ export default function Home(props) {
                   <LogoGithub
                     height="48px"
                     width="48px"
-                    cssClasses="h-12 w-12 hover:translate-y-1"
+                    cssClasses="h-12 w-12 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-hover-blue rounded-full p-1"
                     color="#FFFFFF"
                   />
                 </a>
                 <button
-                  class="ml-2 shrink-0 rounded-full bg-gradient-to-br from-sky-500 to-cyan-400 px-8 py-1 text-xl font-medium hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50"
+                  class="ml-2 shrink-0 rounded-full bg-gradient-to-br from-sky-500 to-cyan-400 px-8 py-1 text-xl font-medium hover:from-sky-700 hover:to-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-600/50 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-hover-blue rounded-full p-1"
                   type="submit"
-                  onClick={() =>
-                    (window.location.href =
-                      "https://www.linkedin.com/in/nathanjahnke/")
-                  }
+                  onClick={() => (window.location.href = "/pdf")}
                 >
                   Resume
                 </button>
@@ -113,64 +110,66 @@ export default function Home(props) {
             </span>
           </div>
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
-              <div className="shrink-0">
-                <a href="https://nates-animal-scanner.netlify.app/">
-                  <img
-                    className="h-36 w-36 hover:translate-y-1"
-                    src="wildlifeexplorer.png"
-                    alt="Project Web Design"
-                    loading="lazy"
-                    title=""
-                  />
-                </a>
-              </div>
-              <div>
-                <div className="flex flex-col items-center gap-y-2 md:flex-row">
-                  <a
-                    className="hover:text-cyan-400"
-                    href="https://nates-animal-scanner.netlify.app/"
-                  >
-                    <div className="text-xl font-semibold">
-                      AI Wildlife Explorer
-                    </div>
+            <div className="group group-hover:border group-hover:border-cyan-400 group-hover:border-opacity-50 rounded-md">
+              <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
+                <div className="shrink-0">
+                  <a href="https://nates-animal-scanner.netlify.app/">
+                    <img
+                      className="h-36 w-36 transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:bg-hover-blue rounded-full p-1"
+                      src="wildlifeexplorer.png"
+                      alt="Project Web Design"
+                      loading="lazy"
+                      title=""
+                    />
                   </a>
-                  <div class="ml-3 flex flex-wrap gap-2">
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">
-                      Next.js
-                    </div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
-                      React.js
-                    </div>
-                    <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">
-                      Tailwind CSS
-                    </div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
-                      Azure Computer Vision API
-                    </div>
-                    <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">
-                      OpenAI API
+                </div>
+                <div>
+                  <div className="flex flex-col items-center gap-y-2 md:flex-row">
+                    <a
+                      className="hover:text-cyan-400"
+                      href="https://nates-animal-scanner.netlify.app/"
+                    >
+                      <div className="text-xl font-semibold group-hover:text-cyan-400">
+                        AI Wildlife Explorer
+                      </div>
+                    </a>
+                    <div class="ml-3 flex flex-wrap gap-2">
+                      <div className="rounded-md px-2 py-1 text-xs font-semibold bg-fuchsia-400 text-fuchsia-900">
+                        Next.js
+                      </div>
+                      <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
+                        React.js
+                      </div>
+                      <div class="rounded-md px-2 py-1 text-xs font-semibold bg-lime-400 text-lime-900">
+                        Tailwind CSS
+                      </div>
+                      <div className="rounded-md px-2 py-1 text-xs font-semibold bg-sky-400 text-sky-900">
+                        Azure Computer Vision API
+                      </div>
+                      <div className="rounded-md px-2 py-1 text-xs font-semibold bg-rose-400 text-rose-900">
+                        OpenAI API
+                      </div>
                     </div>
                   </div>
+                  <p class="mt-3 text-gray-400">
+                    AI Wildlife Explorer is a personal web development project
+                    that showcases the developer's skills in creating an
+                    application that utilizes AI technology. It allows users to
+                    upload images of animals to receive an AI-generated response
+                    describing the animal, and also provides structured
+                    information about the animal's habitat, diet, physical
+                    characteristics, behavior, and conservation status. The app
+                    features a modern, clean user interface and is built using
+                    Next.js 13, Tailwind CSS, React, and React Ionicons.
+                  </p>
                 </div>
-                <p class="mt-3 text-gray-400">
-                  AI Wildlife Explorer is a personal web development project
-                  that showcases the developer's skills in creating an
-                  application that utilizes AI technology. It allows users to
-                  upload images of animals to receive an AI-generated response
-                  describing the animal, and also provides structured
-                  information about the animal's habitat, diet, physical
-                  characteristics, behavior, and conservation status. The app
-                  features a modern, clean user interface and is built using
-                  Next.js 13, Tailwind CSS, React, and React Ionicons.
-                </p>
               </div>
             </div>
             <div className="flex flex-col items-center gap-x-8 rounded-md bg-slate-800 p-3 md:flex-row">
               <div className="shrink-0">
                 <a href="https://next-mn-fish.vercel.app/">
                   <img
-                    className="h-36 w-36 hover:translate-y-1"
+                    className="h-36 w-36 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-hover-blue rounded-full p-1"
                     src="fish.png"
                     alt="Project Web Design"
                     loading="lazy"
@@ -219,7 +218,7 @@ export default function Home(props) {
               <div className="shrink-0">
                 <a href="https://nates-fight-viewer.netlify.app/">
                   <img
-                    className="rounded-full h-36 w-36 hover:translate-y-1"
+                    className="h-36 w-36 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-hover-blue rounded-full p-1"
                     src="fight.png"
                     alt="Project Web Design"
                     loading="lazy"
@@ -259,3 +258,5 @@ export default function Home(props) {
     </>
   );
 }
+
+// Path: pages\index.js
