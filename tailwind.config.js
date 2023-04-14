@@ -25,10 +25,13 @@ module.exports = {
       transitionTimingFunction: {
         "in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
       },
+      transform: {
+        gpu: "translateZ(0)",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: { transform: ["hover", "group-hover"] },
   },
   plugins: [],
 };
