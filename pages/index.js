@@ -223,6 +223,9 @@ export default function Home(props) {
                     site and access detailed information about each fish
                     species, enhancing their knowledge of the fish population in
                     Minnesota.
+                    <br />
+                    <br /> The website was developed using Next.js, React.js,
+                    Tailwind CSS, and Sanity.io CMS.
                   </p>
                 </div>
               </div>
